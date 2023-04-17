@@ -153,7 +153,7 @@ nav a {
     100% {}
 }
 main {
-    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
 }
 
 .container-bubbles {
@@ -162,14 +162,34 @@ main {
     background-color: var(--coffee);
     display: flex;
     flex-direction: column;
-    scroll-snap-type: y mandatory;
     box-shadow: 0 0 20px 0px var(--chamoisee);
     width: 80%;
     margin: auto;
-    padding: var(--space-out)
+    padding: var(--space-out);
 }
 .container-bubbles article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+}
+
+.container-bubbles article div {
+    min-height: 100px;
+    border: 1px solid var(--chamoisee);
+    align-self: end;
+    background-color: var(--chamoisee);
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.container-bubbles article div:hover {
+    transform: scale(1.1);
+}
+
+.container-bubbles article h4 {
+    background-color: var(--coffee);
+    border-radius: 10px 10px 0 0;
+    padding: 1rem .2rem;
+    text-align: center;
 }

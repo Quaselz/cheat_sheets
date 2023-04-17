@@ -14,37 +14,34 @@
         <h1> GitHub Cheat Sheet</h1>
     </header>
     <main>
-        <section class="container-bubbles">
+        <section class="container-bubbles" id="setup">
             <h3>Setup</h3>
             <article>
-                <div><h4>git config --global</h4><p>edits the config file</p></div>
-                <div><h4>git status</h4><p>retrieve an entire repository from a hosted location via URL</p></div>
-                <div><h4>git add [file]</h4><p>edits the config file</p></div>
-                <div><h4>git reset [file]</h4><p>edits the config file</p></div>
-                <div><h4>git diff</h4><p>edits the config file</p></div>
-                <div><h4>git commit -m “[descriptive message]”</h4><p>commit your staged content as a new commit snapshot</p></div>
-                <div><h4>git config --global</h4><p>edits the config file</p></div>
+                <div><h4>git config --global user.name “[firstname lastname]”</h4><p>set a name that is identifiable for credit when review version history</p></div>
+                <div><h4>git config --global user.email “[valid-email]”</h4><p>set an email address that will be associated with each history marker</p></div>
+                <div><h4>git config --global color.ui auto</h4><p>set automatic command line coloring for Git for easy reviewing</p></div>
             </article>
         </section>
-        <section class="container-bubbles">
-            <h3>Setup</h3>
+        <section class="container-bubbles" id="stage">
+            <h3>STAGE & SNAPSHOT</h3>
             <article>
-            <div><h4>git status</h4><p>retrieve an entire repository from a hosted location via URL</p></div>
-            <div><h4>git add [file]</h4><p>add a file as it looks now to your next commit (stage</p></div>
-            <div><h4>git reset [file]</h4><p>unstage a file while retaining the changes in working directory</p></div>
-            <div><h4>git diff</h4><p>edits the config file</p></div>
-            <div><h4>git commit -m “[descriptive message]”</h4><p>commit your staged content as a new commit snapshot</p></div>
-                </article>
+                <div><h4>git status</h4><p>retrieve an entire repository from a hosted location via URL</p></div>
+                <div><h4>git add [file]</h4><p>add a file as it looks now to your next commit (stage</p></div>
+                <div><h4>git reset [file]</h4><p>unstage a file while retaining the changes in working directory</p></div>
+                <div><h4>git diff</h4><p>diff of what is changed but not staged</p></div>
+                <div><h4>git commit -m “[descriptive message]”</h4><p>commit your staged content as a new commit snapshot</p></div>
+            </article>
         </section>
-        <section class="container-bubbles">
+        <section class="container-bubbles" id="init">
             <h3>SETUP & INIT</h3>
             <article>
             <div><h4>git init</h4><p>einitialize an existing directory as a Git repository</p></div>
             <div><h4>git clone [url]</h4><p>retrieve an entire repository from a hosted location via URL</p></div>
-        </section>
-        <section class="container-bubbles">
-            <h3>BRANCH & MERGE</h3>
             </article>
+
+        </section>
+        <section class="container-bubbles" id="branch">
+            <h3>BRANCH & MERGE</h3>
             <article>
             <div><h4>git branch</h4><p>list your branches. a * will appear next to the currently active branch</p></div>
             <div><h4>git branch [branch-name]</h4><p>create a new branch at the current commit</p></div>
